@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #4CAF50; /* 녹색 */
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* 패딩이 너비에 포함되도록 */
+}
+
+textarea {
+    resize: vertical; /* 수직으로만 크기 조절 가능 */
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* 리뷰 목록 스타일 */
+#review-list {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 2px dashed #ddd;
+}
+
+.review-item {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.review-meta {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.review-meta strong {
+    color: #333;
+}
+
+.review-meta span {
+    float: right;
+    color: #FFC107; /* 별점 색상 */
+    font-weight: bold;
+}
+
+.placeholder {
+    text-align: center;
+    color: #aaa;
+    font-style: italic;
+}

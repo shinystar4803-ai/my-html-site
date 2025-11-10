@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 리뷰 이벤트 사이트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 간단 리뷰 이벤트 참여</h1>
+        <p>현명한 선택 감사합니다!</p>
+        
+        <form id="review-form">
+            <div class="form-group">
+                <label for="name">이름 (또는 닉네임):</label>
+                <input type="text" id="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="rating">별점:</label>
+                <select id="rating" required>
+                    <option value="5">⭐⭐⭐⭐⭐ (5점)</option>
+                    <option value="4">⭐⭐⭐⭐ (4점)</option>
+                    <option value="3">⭐⭐⭐ (3점)</option>
+                    <option value="2">⭐⭐ (2점)</option>
+                    <option value="1">⭐ (1점)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="review-text">리뷰 내용:</label>
+                <textarea id="review-text" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit">리뷰 제출하기</button>
+        </form>
+
+        <h2>💌 참여 리뷰 목록</h2>
+        <div id="review-list">
+            <p class="placeholder">아직 제출된 리뷰가 없습니다.</p>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script> 
+</body>
+</html>
